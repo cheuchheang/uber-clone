@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import React from "react";
 import tw from "twrnc";
+import NavOptions from "../components/NavOptions";
 
 const HomeScreen = () => {
   return (
@@ -17,6 +18,7 @@ const HomeScreen = () => {
           style={{ height: 100, width: 100, resizeMode: "contain" }}
           source={{ uri: "https://links.papareact.com/gzs" }}
         />
+        <NavOptions />
       </View>
     </View>
   );
