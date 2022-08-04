@@ -1,11 +1,4 @@
-import {
-  Platform,
-  View,
-  StatusBar,
-  StyleSheet,
-  Text,
-  Image,
-} from "react-native";
+import { View, Image } from "react-native";
 import React from "react";
 import tw from "twrnc";
 import NavOptions from "../components/NavOptions";
@@ -25,11 +18,3 @@ const HomeScreen = () => {
 };
 
 export default HomeScreen;
-
-const styles = StyleSheet.create({
-  AndroidSafeArea: {
-    flex: 1,
-    backgroundColor: "white",
-    paddingTop: (Platform.OS = "android" ? StatusBar.currentHeight : 0),
-  },
-});
